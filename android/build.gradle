@@ -30,7 +30,7 @@ buildscript {
     if (project == rootProject) {
         repositories {
             mavenCentral()
-            maven { url "https://repo.spring.io/libs-release" }
+            maven { url 'https://www.jitpack.io' }
             google()
         }
         dependencies {
@@ -59,7 +59,7 @@ android {
 repositories {
     // ref: https://www.baeldung.com/maven-local-repository
     mavenCentral()
-    maven { url "https://repo.spring.io/libs-release" }
+    maven { url 'https://www.jitpack.io' }
     mavenLocal()
     maven {
         // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
@@ -75,7 +75,7 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    implementation 'com.danikula:videocache:2.7.0'
+    implementation 'com.danikula:videocache:2.7.1'
 }
 
 def configureReactNativePom(def pom) {
