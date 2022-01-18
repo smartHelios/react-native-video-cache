@@ -30,11 +30,8 @@ buildscript {
     if (project == rootProject) {
         repositories {
             mavenCentral()
-            flatDir {
-                dirs 'libs'
-            }
-            google()
             maven { url 'https://www.jitpack.io' }
+            google()
         }
         dependencies {
             classpath 'com.android.tools.build:gradle:3.4.1'
@@ -62,18 +59,14 @@ android {
 repositories {
     // ref: https://www.baeldung.com/maven-local-repository
     mavenCentral()
-    flatDir {
-        dirs 'libs'
-    }
     maven { url 'https://www.jitpack.io' }
-    mavenLocal()
     google()
 }
 
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    //implementation 'com.danikula:videocache:2.6.3'
+    implementation 'com.danikula:videocache:+'
     //implementation files("libs/videocache-2.6.3.jar")
     //implementation files("libs/videocache-2.7.1.aar")
     //compile(name:'videocache-2.7.1', ext:'aar')
