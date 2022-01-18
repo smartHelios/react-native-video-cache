@@ -76,7 +76,7 @@ dependencies {
     //implementation 'com.danikula:videocache:2.6.3'
     //implementation files("libs/videocache-2.6.3.jar")
     //implementation files("libs/videocache-2.7.1.aar")
-    compile(name:'videocache-2.7.1', ext:'aar')
+    //compile(name:'videocache-2.7.1', ext:'aar')
 }
 
 def configureReactNativePom(def pom) {
